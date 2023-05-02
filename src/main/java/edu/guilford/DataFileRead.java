@@ -78,7 +78,7 @@ public class DataFileRead {
     }
     //write values to a file
     public static void writeData(double[][] values, String location) throws URISyntaxException, IOException{
-        //"throws" means "not our problem", it's the problem of whover asked us to run this method
+        //  "throws" means "not our problem", it's the problem of whover asked us to run this method
         Path locationPath = Paths.get(DataFileRead.class.getResource("/edu/guilford/").toURI());
         //open  afile in that folder
         FileWriter fileLocation = new FileWriter(locationPath.toString()+"/"+location);
